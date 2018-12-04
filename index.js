@@ -1,4 +1,5 @@
 'use strict';
+const bcrypto = require('../../../bcrypto');
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -141,7 +142,9 @@ function combinedHash(first, second, preserveOrder) {
     return second;
   }
   if (preserveOrder) {
-    return (0, _ethereumjsUtil.sha3)(bufJoin(first, second));
+    let hash = bcrypto.Keccak.digest(bufJoin(first, second), 256);
+    return hash;
+	// return (0, _ethereumjsUtil.sha3)(bufJoin(first, second));
   } else {
     return (0, _ethereumjsUtil.sha3)(bufSortJoin(first, second));
   }
