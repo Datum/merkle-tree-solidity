@@ -12,7 +12,7 @@
   "author": "Ameen Soleimani",
   "license": "MIT",
   "dependencies": {
-    "bcrypt": "^3.0.2",
+    "bcrypto": "^3.0.1",
     "es6-promisify": "^5.0.0",
     "ether-pudding": "^3.2.0",
     "ethereumjs-util": "^5.1.1",
