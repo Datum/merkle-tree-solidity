@@ -1,5 +1,5 @@
 'use strict';
-const bcrypto = require('../../../bcrypto');
+const bcrypto = require('bcrypto');
 
 Object.defineProperty(exports, "__esModule", {
   value: true
